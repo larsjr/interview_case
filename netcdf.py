@@ -4,11 +4,11 @@ import datetime
 from datetime import date
 
 
-def get_highest_wave_height_for_date(
-    *, filepath: str, latitude: float, longitude: float, date_: date
+def calculate_highest_wave_height_for_date(
+    filepath: str, date_: date, *, latitude: float, longitude: float
 ) -> float:
     """
-    Get the  hightest wave height for a given day on the provided location
+    Get the highest wave height for a given day on the provided location
     by summing up all hourly values registered for that day.
 
     Args:
@@ -31,12 +31,14 @@ def get_highest_wave_height_for_date(
 
 if __name__ == "__main__":
     date_to_check = date(2019, 1, 1)
-    latitude = 0.0001
+    latitude = 0.000
     longitude = 0.000
-    hmax = get_highest_wave_height_for_date(
-        filepath="waves_2019-01-01.nc",
+    hmax = calculate_highest_wave_height_for_date(
+        "waves_2019-01-01.nc",
+        date_to_check,
         latitude=latitude,
         longitude=longitude,
-        date_=date_to_check,
     )
-    print(f"Max wave height at ({latitude}, {longitude}) for {date_to_check} is {hmax}")
+    print(
+        f"Max wave height at ({latitude:.3f}, {longitude:.3f}) for {date_to_check} is {hmax}"
+    )
