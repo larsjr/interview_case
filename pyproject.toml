@@ -5,10 +5,14 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "dash-leaflet>=1.0.15",
+    "dash>=2.18.2",
     "netcdf4>=1.7.2",
     "pip>=24.3.1",
     "ruff>=0.8.2",
     "xarray>=2024.11.0",
+    "pytest>=8.3.4",
+    "mypy>=1.13.0",
 ]
 
 [dependency-groups]
