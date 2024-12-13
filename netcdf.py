@@ -9,7 +9,7 @@ def calculate_highest_wave_height_for_date(
 ) -> float:
     """
     Get the highest wave height for a given day on the provided location
-    by summing up all hourly values registered for that day.
+    by finding the max value for that date.
 
     Args:
       filepath: Path to netcdf file

@@ -28,7 +28,7 @@ The total size of the hmax values is 36MB. Including the other values (mwh, mwp,
 is 44MB. 
 
 Assuming that we use today's date, December 7, 2024, there are 27 369 days since January 1 1950. That 
-means that the size of all files, assuming they are about the same as the data for 2019-01-01 would be
+means that the size of all files, assuming they are about the same as the data for 2019-01-01, would be
 around 1204 GB (1,204,236MB). My main point of concern would be the sheer number of files and their total size.
 
 Handling 27 000 files and calculating max wave height is not I would try to do in real-time when the
